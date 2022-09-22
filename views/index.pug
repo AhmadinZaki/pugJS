@@ -1,0 +1,72 @@
+html   
+    head    
+        link(
+            rel="stylesheet", 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css",
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT",
+            crossorigin="anonymous"
+            )
+
+        link(rel="stylesheet", href="/pulic/mystyle.css")
+
+        title Belajar pug 
+    body 
+        include ./navigator
+        h2 hallo
+        if (data.content == "konten")
+            include ./konten
+
+        img(src="/images/apple-watch-blue-icon.png", alt="", srcset="")
+        //- h1.heading.heading2#head Hallo pug 
+   
+        //- h1 Example Heading 
+        //-     span(class="badge bg-secondary") New
+
+        //- //- cara1 panggil data
+        //- //- h2=data.nama
+        //- //- p=data.email 
+
+        //- //- cara2 panggil data
+        //- //- h2 Nama Saya : #{data.nama}
+        //- //- p Email Saya : #{data.email} 
+
+        //- - var title = "On Dogs: Man's Best Friend";
+        //- - var author = "enlore";
+        //- - var theGreat = "<span>escape!</span>";
+
+        //- //- if else di pug
+        //- if (data.status)
+        //-     h2 Nama Saya : #{data.nama}
+        //-     p Email Saya : #{data.email} 
+        //- else
+        //-     h2 ups
+        //-     h2=theGreat
+            
+
+        //- //- loop di pug
+        //- ul  
+        //-     each i in data.hobi
+        //-         li=i
+
+        //- //- cara menampilkan text ada 2, menggunakan . atau |
+        //- p. 
+        //-     Lorem ipsum dolor, sit amet consectetur 
+        //-     adipisicing elit. Magni, adipisci. Minus 
+        //-     porro velit a ad laborum maxime, ratione 
+        //-     odit quae iusto officiis, deserunt earum quos 
+        //-     praesentium magni excepturi necessitatibus molestias.
+
+        //- p
+        //-     |Lorem ipsum dolor, sit amet consectetur 
+        //-     |adipisicing elit. Magni, adipisci. Minus 
+        //-     |porro velit a ad laborum maxime, ratione 
+        //-     |odit quae iusto officiis, deserunt earum quos 
+        //-     |praesentium magni excepturi necessitatibus molestias.
+
+
+        script(
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js",
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8",
+            crossorigin="anonymous"
+        ) 
+            
